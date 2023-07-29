@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Login System</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,
+        200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- Linked Stylesheet Fiels -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <section class="sign section-style" id="sign">
+        <div class="sign-form  my-card" id="signForm">
+            <h1 class="text-center">Smart Login System</h1>
+            <div class="name-field" id="nameField">
+                <input type="text" name="userName" class="user-name my-input mb-3  is-invalid" id="userName"
+                    placeholder="Enter Your Name..." oninput="regexName()">
+                <p class="alert-danger alert p-2 d-none" id="nameAlert">
+                    Invalid Name, Enter Your Name With Characters Only
+                </p>
+            </div>
+            <div class="email-field" id="emailField">
+                <input type="email" name="userEmail" class="user-email  my-input mb-3 is-invalid" id="userEmail"
+                    placeholder="Enter Your Email..." oninput="regexEmail()">
+                <p class="alert-danger alert p-2 d-none" id="alertEmail">
+                    Invalid Email, EX: example@scoure.com
+                </p>
+            </div>
+            <div class="password-field" id="passwordField">
+                <input type="password" name="userPassword" class="user-password  my-input mb-3 is-invalid" id="userPassword"
+                    placeholder="Enter Your Password..." oninput="regexPassword()">
+                <p class="alert-danger alert p-2 d-none" id="alertPassword">
+                    Invalid Password, Choose Strong Password With Range From 5 To 30
+                    Contains Characters And Numbers And @ # $ % ^ & * -
+                </p>
+            </div>
+            <button class="sign-btn my-btn w-100 mb-3" id="signBtn" onclick="signup()">
+                Sign Up
+            </button>
+            <p class="empty-alert alert p-2 text-center text-danger d-none" id = "emptyAlert">
+                Fill All Inputs
+            </p>
+            <p class="empty-alert alert p-2 text-center text-danger d-none" id = "InvalidData">
+                Invalid Data
+            </p>
+            <p class="empty-alert alert p-2 text-center text-danger d-none" id = "existEmail">
+                This Email Is Already Signed
+            </p>
+            <p class="empty-alert alert p-2 text-center text-success  d-none" id = "sucessSign">
+                Signed Up Succefully
+            </p>
+
+            <div class="login-link mt-3 d-flex justify-content-center align-items-center" id="loginLink">
+                <p class="text-white text-capitalize m-0">
+                    You have an account?
+                </p>
+                <a class="btn text-white ms-1 sign-link " id = "signLink">Login</a>
+            </div>
+        </div>
+    </section>
+    <!-- Linked Js Fiels -->
+    <script src="./js/all.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/signup.js"></script>
+</body>
+
+</html>

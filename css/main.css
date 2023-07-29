@@ -1,0 +1,113 @@
+*{
+    --main-color: #24353F;
+    --header-color: #17A2B8;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+::placeholder{
+    color: #ddd;
+}
+::selection{
+    background-color: var(--header-color);
+}
+
+
+body{
+    background-color: var(--main-color);
+}
+
+h1{
+    font-family: 'Titillium Web', sans-serif;
+    color: var(--header-color);
+    font-size: 40px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.section-style{
+    width: 55%;
+    margin: 50px auto;
+}
+.my-card{
+    background-color: #fff;
+    padding: 50px 30px;
+    width: 100%;
+    background-color: var(--main-color);
+    box-shadow: 0 0 10px 10px #00000065;
+}
+
+.my-btn{
+    border: 1px solid var(--header-color);
+    border-radius: 5px;
+    color: #17A2B8;
+    background-color: transparent;
+    transition: 400ms;
+    padding: 15px 8px;
+    margin-top: 20px;
+    outline: none;
+}
+
+.my-btn:hover{
+    background-color: #17A2B8;
+    color: #fff;
+}
+
+.my-input{
+    background-color: transparent;
+    width: 100%;
+    padding: 15px 8px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    outline: transparent;
+    color: white;
+}
+
+
+
+.my-input:focus{
+    border-color: var(--header-color) ;
+}
+
+
+
+nav h1{
+    color: var(--header-color) !important;
+}
+
+.logout-btn{
+    outline: 2px solid goldenrod;
+    border: none;
+    padding: 10px 15px;
+    color: #eee !important;
+    background-color: transparent;
+    border-radius: 5px;
+    text-align: center;
+    animation-duration: 400ms;
+}
+
+.logout-btn:hover{
+    background-color: goldenrod;
+}
+
+
+.sign-link{
+    animation-duration: 400ms;
+    outline: none;
+    border: none;
+}
+.sign-link:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 575.98px) {
+    .section-style{
+        width: 95%;
+        margin: 50px auto;
+    }
+    .my-card h1{
+        font-size: 30px;
+    }
+}

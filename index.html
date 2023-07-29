@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Login System</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,
+        200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- Linked Stylesheet Fiels -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <section class="sign section-style" id="sign">
+        <div class="sign-form  my-card" id="signForm">
+            <h1 class="text-center">Smart Login System</h1>
+            <div class="email-field" id="emailField">
+                <input type="email" name="userEmail" class="user-email  my-input mb-3 is-invalid" id="userEmail"
+                    placeholder="Enter Your Email..." >
+            </div>
+            <div class="password-field" id="passwordField">
+                <input type="password" name="userPassword" class="user-password  my-input mb-3 is-invalid" id="userPassword"
+                    placeholder="Enter Your Password...">
+            </div>
+            <p class="incorrect-data text-capitalize alert text-danger text-center fs-5 d-none" id="incorrectData">
+                incorrect email or password
+            </p>
+
+            <button class="login-btn my-btn w-100 mb-3" id="loginBtn" onclick="login()">
+                Login
+            </button>
+            <div class="login-link mt-3 d-flex justify-content-center align-items-center flex-wrap" id="loginLink">
+                <p class="text-white text-capitalize m-0">
+                    don't have an account?
+                </p>
+                <a class="btn text-white ms-1 sign-link " id = "signLink">Sign Up</a>
+            </div>
+        </div>
+    </section>
+    <!-- Linked Js Fiels -->
+    <script src="./js/all.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/login.js"></script>
+</body>
+
+</html>
